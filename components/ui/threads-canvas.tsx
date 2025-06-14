@@ -23,10 +23,12 @@ const ThreadsCanvas: React.FC<ThreadsCanvasProps> = ({
     if (!ctx) return;
 
     const resize = () => {
-      const { clientWidth, clientHeight } = canvas;
+      const { clientWidth, clientHeight } = document.documentElement;
       const dpr = window.devicePixelRatio || 1;
       canvas.width = clientWidth * dpr;
       canvas.height = clientHeight * dpr;
+      canvas.style.width = `${clientWidth}px`;
+      canvas.style.height = `${clientHeight}px`;
       ctx.scale(dpr, dpr);
     };
 
@@ -117,8 +119,15 @@ const ThreadsCanvas: React.FC<ThreadsCanvasProps> = ({
   return (
     <canvas
       ref={canvasRef}
-      className="w-full h-full"
-      style={{ background: 'transparent' }}
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        background: 'transparent',
+        pointerEvents: 'none'
+      }}
     />
   );
 };

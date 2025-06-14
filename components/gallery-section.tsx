@@ -324,23 +324,23 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
       subcategories: {
         bwai: {
           title: "Build With AI - GDG Manila",
-          description: "Google Developer Groups Manila's AI-focused event series"
+          description: "Invited to Google Developer Groups Manila's Build with AI Workshop 2025"
         },
         bpi: {
           title: "BPI Stellar Summit",
-          description: "Annual gathering of student leaders in finance and technology"
+          description: "Invited to BPI Stellar Student Summit Year 2"
         },
         nexhire: {
-          title: "NexHire Career Fest",
-          description: "Premier tech career festival in the Philippines"
+          title: "Philippine Career Fest by NexHire",
+          description: "In partnership with GDG on Campus UP Manila"
         },
         globe: {
           title: "Globe D.AI.TA",
-          description: "Globe's Data and AI Technology Assembly"
+          description: "Globe's Data and AI Technology Workshop, using Google AI Tools/Google Console"
         },
         blockchain: {
           title: "Philippine Blockchain Week",
-          description: "Web3 and blockchain technology conference"
+          description: "Web3 and blockchain technology event"
         },
         tedx: {
           title: "TEDxUPV Women",
@@ -348,7 +348,7 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
         },
         echelon: {
           title: "Echelon Philippines",
-          description: "Asia's leading tech conference"
+          description: "Echelon Philippines Tech Event"
         }
       }
     },

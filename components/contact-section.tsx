@@ -148,12 +148,32 @@ export function ContactSection({ navigateToSection }: ContactSectionProps) {
 
             {/* Contact Form */}
             <form onSubmit={handleFormSubmit} className="space-y-5">
+              {formStatus === "success" && (
+                <Alert className="bg-green-500/20 border-green-500/50 text-green-200">
+                  <AlertTitle>Success!</AlertTitle>
+                  <AlertDescription>
+                    Your message has been sent successfully. I'll get back to you soon!
+                  </AlertDescription>
+                </Alert>
+              )}
+              {formStatus === "error" && (
+                <Alert className="bg-red-500/20 border-red-500/50 text-red-200">
+                  <AlertCircle className="h-4 w-4" />
+                  <AlertTitle>Error</AlertTitle>
+                  <AlertDescription>
+                    Please fill in all required fields.
+                  </AlertDescription>
+                </Alert>
+              )}
               <div className="grid grid-cols-1 gap-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-white/80">Name</label>
                   <input
                     id="name"
+                    name="name"
                     type="text"
+                    value={formData.name}
+                    onChange={handleInputChange}
                     placeholder="Enter your name"
                     className="w-full p-2.5 rounded-lg bg-[#2D0449]/20 border border-violet-500/20 
                     focus:border-violet-500/40 text-white/90 placeholder-white/50 outline-none text-sm
@@ -165,7 +185,10 @@ export function ContactSection({ navigateToSection }: ContactSectionProps) {
                   <label htmlFor="email" className="text-sm font-medium text-white/80">Email</label>
                   <input
                     id="email"
+                    name="email"
                     type="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
                     placeholder="Enter your email"
                     className="w-full p-2.5 rounded-lg bg-[#2D0449]/20 border border-violet-500/20 
                     focus:border-violet-500/40 text-white/90 placeholder-white/50 outline-none text-sm
@@ -177,6 +200,9 @@ export function ContactSection({ navigateToSection }: ContactSectionProps) {
                   <label htmlFor="message" className="text-sm font-medium text-white/80">Message</label>
                   <textarea
                     id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                     placeholder="Type your message here"
                     rows={4}
                     className="w-full p-2.5 rounded-lg bg-[#2D0449]/20 border border-violet-500/20 
@@ -188,12 +214,16 @@ export function ContactSection({ navigateToSection }: ContactSectionProps) {
               </div>
               <button
                 type="submit"
-                className="w-full py-3 bg-[#2D0449] rounded-lg text-white font-semibold 
-                backdrop-blur-sm border border-violet-500/20 shadow-[0_0_15px_rgba(139,92,246,0.3)]
-                hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] hover:border-violet-500/40
-                transition-all duration-300 hover:scale-[1.02]"
+                disabled={isSubmitting}
+                className={cn(
+                  "w-full py-3 bg-[#2D0449] rounded-lg text-white font-semibold",
+                  "backdrop-blur-sm border border-violet-500/20 shadow-[0_0_15px_rgba(139,92,246,0.3)]",
+                  "hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] hover:border-violet-500/40",
+                  "transition-all duration-300 hover:scale-[1.02]",
+                  "disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                )}
               >
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
