@@ -231,14 +231,14 @@ export function ProjectsSection({ className, navigateToSection }: ProjectsSectio
                 </div>
 
                 {/* Links */}
-                <div className="flex items-center gap-4 pt-2">
+                <div className="flex items-center gap-4 pt-2 relative z-50">
                   {project.link && (
                     <Link
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white/70 hover:text-white transition-all duration-200 hover:scale-110
-                      hover:shadow-[0_0_15px_rgba(139,92,246,0.3)]"
+                      hover:shadow-[0_0_15px_rgba(139,92,246,0.3)] relative z-50 pointer-events-auto"
                     >
                       <Github className="w-5 h-5" />
                     </Link>

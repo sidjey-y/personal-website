@@ -379,17 +379,14 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
 
   return (
     <section id="gallery" className="w-full min-h-screen py-20 relative overflow-hidden">
-      {/* Particles Background */}
       <GalleryParticles />
       
-      {/* Background Gradient Effects */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] rounded-full bg-[#1b022c]/30 blur-[100px]" />
         <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] rounded-full bg-[#9333EA]/20 blur-[100px]" />
       </div>
 
       <div className="container px-4 mx-auto relative">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-1.5 mb-4 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
             <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
@@ -400,7 +397,7 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
             Gallery
           </h2>
           <p className="text-white/60 max-w-2xl mx-auto">
-            A journey through tech events, hackathons, and memorable moments!
+            Some of my memorable moments!
           </p>
         </div>
         

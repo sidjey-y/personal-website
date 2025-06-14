@@ -70,12 +70,12 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           )}
           
           {/* Hover overlay with link */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 z-10">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.1 }}
-              className="z-10"
+              className="z-20"
             >
               <Link
                 href={project.link}
@@ -83,7 +83,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                 rel="noopener noreferrer"
                 className={cn(
                   "px-4 py-2 rounded-full flex items-center gap-2",
-                  "backdrop-blur-[10px] bg-white/15 border border-white/20 hover:bg-white/25 hover:shadow-lg dark:bg-primary/30 dark:border-white/5 dark:hover:bg-primary/40 transition-all duration-300"
+                  "backdrop-blur-[10px] bg-white/15 border border-white/20 hover:bg-white/25 hover:shadow-lg dark:bg-primary/30 dark:border-white/5 dark:hover:bg-primary/40 transition-all duration-300",
+                  "relative z-30 pointer-events-auto"
                 )}
               >
                 View Project <ExternalLink size={16} />

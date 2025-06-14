@@ -81,7 +81,6 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
           />
         </motion.button>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item, index) => (
             <motion.button
@@ -112,7 +111,6 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
         <motion.button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden relative group p-2"
@@ -135,7 +133,6 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
         </motion.button>
       </nav>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div

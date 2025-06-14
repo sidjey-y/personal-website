@@ -10,7 +10,7 @@ interface SpotlightCardProps {
 const SpotlightCard = ({ 
   children, 
   className = "", 
-  spotlightColor = "rgba(147, 51, 234, 0.2)" // Default purple spotlight
+  spotlightColor = "rgba(147, 51, 234, 0.2)" 
 }: SpotlightCardProps) => {
   const divRef = useRef<HTMLDivElement>(null);
 
