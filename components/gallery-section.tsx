@@ -111,19 +111,19 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
     },
     {
       src: "/images/Events/bpi/Stellar-2.jpg",
-      alt: "BPI Stellar Summit - Panel Discussion",
+      alt: "BPI Stellar Summit",
       category: "events",
       subCategory: "bpi",
       eventTitle: "BPI Stellar Student Summit",
-      description: "Industry experts sharing insights on fintech innovation"
+      description: ""
     },
     {
       src: "/images/Events/bpi/Stellar-3.jpg",
-      alt: "BPI Stellar Summit - Networking",
+      alt: "BPI Stellar Summit",
       category: "events",
       subCategory: "bpi",
       eventTitle: "BPI Stellar Student Summit",
-      description: "Connecting with industry professionals and fellow students"
+      description: ""
     },
 
     // 3. NexHire - Philippine Tech Career Fest
@@ -133,7 +133,7 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
       category: "events",
       subCategory: "nexhire",
       eventTitle: "NexHire - Philippine Tech Career Fest",
-      description: "Premier tech career festival connecting talents with opportunities"
+      description: "Tech career festival"
     },
     {
       src: "/images/Events/nexhire/nexhire-2.jpg",
@@ -149,7 +149,7 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
       category: "events",
       subCategory: "nexhire",
       eventTitle: "NexHire Tech Talks",
-      description: "Industry leaders sharing insights on tech careers"
+      description: "Industry leaders sharing insights on tech careers!"
     },
 
     // 4. Globe - Fusion of D.AI.TA
@@ -175,7 +175,7 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
       category: "events",
       subCategory: "globe",
       eventTitle: "Globe D.AI.TA Insights",
-      description: "Expert panel on data science and AI applications"
+      description: "Workshop on data science and AI applications"
     },
     {
       src: "/images/Events/globe/globe-4.jpg",
@@ -183,7 +183,7 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
       category: "events",
       subCategory: "globe",
       eventTitle: "Globe D.AI.TA Innovation",
-      description: "Showcasing cutting-edge AI solutions"
+      description: ""
     },
 
     // 5. Philippine Block Chain Week
