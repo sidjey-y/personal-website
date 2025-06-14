@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Pattern -->
+    <defs>
+        <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+        </pattern>
+    </defs>
+    <rect width="400" height="400" fill="url(#grid)"/>
+    
+    <!-- Decorative Elements -->
+    <circle cx="200" cy="200" r="160" fill="none" stroke="rgba(147,51,234,0.3)" stroke-width="2"/>
+    <circle cx="200" cy="200" r="120" fill="none" stroke="rgba(147,51,234,0.2)" stroke-width="4"/>
+    <circle cx="200" cy="200" r="80" fill="none" stroke="rgba(147,51,234,0.1)" stroke-width="6"/>
+    
+    <!-- Floating Shapes -->
+    <rect x="60" y="60" width="40" height="40" fill="rgba(147,51,234,0.2)" transform="rotate(45 80 80)"/>
+    <circle cx="320" cy="320" r="25" fill="rgba(147,51,234,0.15)"/>
+    <rect x="300" y="80" width="30" height="30" fill="rgba(147,51,234,0.1)"/>
+    <circle cx="80" cy="320" r="20" fill="rgba(147,51,234,0.25)"/>
+    
+    <!-- Central Design -->
+    <g transform="translate(200 200)">
+        <path d="M0,-60 L52,30 L-52,30 Z" fill="rgba(147,51,234,0.3)" transform="rotate(0)"/>
+        <path d="M0,-60 L52,30 L-52,30 Z" fill="rgba(147,51,234,0.2)" transform="rotate(120)"/>
+        <path d="M0,-60 L52,30 L-52,30 Z" fill="rgba(147,51,234,0.1)" transform="rotate(240)"/>
+    </g>
+</svg> 
