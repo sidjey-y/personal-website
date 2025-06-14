@@ -277,10 +277,10 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
     // Life Events
     {
       src: "/images/photo1.jpeg",
-      alt: "SoComSci's Tech Week",
+      alt: "Life Event",
       category: "life",
       subCategory: "life",
-      eventTitle: "SoComSci's Tech Week",
+      eventTitle: "",
       description: "SoComSci's Tech Week - Host"
     },
     {
