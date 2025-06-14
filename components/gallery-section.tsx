@@ -243,27 +243,27 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
     },
     {
       src: "/images/hackathons/hackathon-2.jpg",
-      alt: "Team Collaboration",
+      alt: "Meet the Team <3",
       category: "hackathons",
       subCategory: "hackathon",
       eventTitle: "Hackathon Team Work",
-      description: "Working together to solve complex problems"
+      description: ""
     },
     {
       src: "/images/hackathons/hackathon-3.jpeg",
-      alt: "Project Development",
+      alt: "Pitching",
       category: "hackathons",
       subCategory: "hackathon",
       eventTitle: "Hackathon Project",
-      description: "Building innovative solutions during the hackathon"
+      description: ""
     },
     {
       src: "/images/hackathons/hackathon-4.jpg",
-      alt: "Team Discussion",
+      alt: "With the Judges",
       category: "hackathons",
       subCategory: "hackathon",
       eventTitle: "Hackathon Team Discussion",
-      description: "Strategic planning and problem-solving"
+      description: ""
     },
     {
       src: "/images/hackathons/hackathon-5.jpg",
@@ -271,7 +271,7 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
       category: "hackathons",
       subCategory: "hackathon",
       eventTitle: "Hackathon Final Presentation",
-      description: "Showcasing our innovative solution to the judges"
+      description: ""
     },
 
     // Life Events
@@ -281,7 +281,7 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
       category: "life",
       subCategory: "life",
       eventTitle: "SoComSci's Tech Week",
-      description: "SoComSci's Tech Week"
+      description: "SoComSci's Tech Week - Host"
     },
     {
       src: "/images/photo3.jpeg",
@@ -289,7 +289,7 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
       category: "life",
       subCategory: "life",
       eventTitle: "Google Developer Groups Merchandise",
-      description: "Merch received given by google for campus organizers/leads"
+      description: "Merch received given by Google for campus organizers/leads"
     },
     {
       src: "/images/photo9.jpeg",
@@ -305,7 +305,7 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
       category: "life",
       subCategory: "life",
       eventTitle: "SONDER 2025",
-      description: "SONDER 2025 - External Leads, Vietnam and Indonesia"
+      description: "SONDER 2025 - External Lead, Virtual Tour with Vietnam and Indonesia"
     },
     {
       src: "/images/Events/AIESEC in UP Manila.png",
@@ -313,7 +313,7 @@ export function GallerySection({ onNextPage, navigateToSection }: GallerySection
       category: "life",
       subCategory: "life",
       eventTitle: "AIESEC in UP Manila",
-      description: "Taking on leadership responsibilities in AIESEC"
+      description: ""
     }
   ]
   
